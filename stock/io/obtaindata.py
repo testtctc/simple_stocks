@@ -9,7 +9,6 @@ class BaoData():
     def get_dailiy_info(cls,stock:str,start_date,end_date):
         """获取每日收盘数据"""
 
-
         # 登陆系统
         lg = bs.login()
         # 显示登陆返回信息
@@ -24,5 +23,4 @@ class BaoData():
         bs.logout()
 
         return  rs
-
 
